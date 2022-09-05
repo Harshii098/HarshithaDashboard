@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Avengers Login </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                background: url(images/aven2.jpg) no-repeat;
+                background-size: cover;
+                align-items:center;
+                justify-content:center;
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Acontainer">
+            <h1 class="label">User Login</h1>
+            <form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+                <div class="font">Email or Phone Number</div>
+                <input autocomplete="on" type="text" name="email">
+                <div id="email_error">Please fill up your Email or Phone</div>
+                <div class="font font2">Password</div>
+                <input type="password" name="password">
+                <div id="pass_error">Please fill your password</div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <script src="valid.js"></script>
+    </body>
+
+</html>

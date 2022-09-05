@@ -1,0 +1,48 @@
+<html>
+    <head>
+    <meta charset=""UTF-8>
+    <title>Logging in</title>
+    <style>
+        body{
+            background: url(images/avengers.jpg);
+            background-size: cover;
+                align-items:center;
+                justify-content:center;
+                display: flex;
+                min-height: 50vh;
+        }
+        .co{
+            position: relative;
+        }
+        .co h1{
+            position: absolute;
+            background-color: aliceblue;
+            transform:translate(-50%,-50%);
+            font-size: 4em;
+        }
+        .co h1:nth-child(1){
+            color:transparent;
+            -webkit-text-stroke: 2px rgb(223, 65, 45);
+        }
+        .co h1:nth-child(2){
+            color: rgb(223, 65, 45);
+            animation: animate 4s ease-in-out infinite;
+        }
+        @keyframes animate{
+            0%,100%
+            {
+                clip-path: polygon(0% 40%, 15% 44%, 32% 55%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+            }
+            50%{
+                clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 70%, 63% 61%, 80% 52%, 98% 43%, 1% 100%, 100% 100%, 0% 74%, 100% 75%, 48% 1%, 49% 100%);
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="co">
+        <h1>Avenger World</h1>
+        <h1>Avenger World</h1>
+        </div>
+    </body>
+</html>
